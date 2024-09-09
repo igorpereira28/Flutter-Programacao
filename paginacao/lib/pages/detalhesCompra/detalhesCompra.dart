@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:paginacao/pages/confirmarPedido/confirmarPedido.dart'; // Certifique-se de importar
+import 'package:paginacao/pages/confirmarPedido/confirmarPedido.dart';
 
 class DetalhesCompra extends StatefulWidget {
-  final Map<String, dynamic> produto; // Atualize para Map<String, dynamic> para incluir o valor
+  final Map<String, dynamic> produto;
 
   const DetalhesCompra({Key? key, required this.produto}) : super(key: key);
 
@@ -17,7 +17,7 @@ class _DetalhesCompraState extends State<DetalhesCompra> {
   @override
   void initState() {
     super.initState();
-    valorProduto = widget.produto['valor'] ?? 0.0; // Inicializa o valor do produto
+    valorProduto = widget.produto['valor'] ?? 0.0;
   }
 
   @override
@@ -37,7 +37,7 @@ class _DetalhesCompraState extends State<DetalhesCompra> {
             Text(
               nomeProduto,
               style: TextStyle(
-                fontSize: 24.0, // Ajuste o tamanho da fonte conforme necessário
+                fontSize: 24.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -57,9 +57,9 @@ class _DetalhesCompraState extends State<DetalhesCompra> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Valor: R\$ ${valorProduto}', // Exibe o valor total calculado
+                  'Valor: R\$ ${valorProduto}',
                   style: TextStyle(
-                    fontSize: 18.0, // Ajuste o tamanho da fonte conforme necessário
+                    fontSize: 18.0,
                   ),
                 ),
                 ElevatedButton(

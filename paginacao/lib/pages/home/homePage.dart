@@ -10,14 +10,12 @@ class HomeState extends State<Home> {
   final TextEditingController _senhaController = TextEditingController();
 
   bool _loginValido() {
-    return _loginController.text == 'admin' && _senhaController.text == '123';
+    return _loginController.text == 'rogerio' && _senhaController.text == '123';
   }
 
   void _entrar() {
     if (_loginValido()) {
       Navigator.of(context).pushNamed('/listaProduto');
-    } else {
-      // Lógica para tratar erro de login
     }
   }
 
@@ -29,9 +27,8 @@ class HomeState extends State<Home> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Exibindo a imagem no topo
             Image.asset(
-              'assets/logo.png',  // Certifique-se que o caminho está correto
+              'assets/logo.png',
               width: 150,
               height: 150,
             ),

@@ -24,7 +24,7 @@ class ConfirmarPedido extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo.png', // Substitua pelo caminho correto do logo
+                'assets/logo.png',
                 height: 150.0,
               ),
               SizedBox(height: 20.0),

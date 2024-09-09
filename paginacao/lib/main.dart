@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: AppRoutes.forms, // Rota inicial
-      routes: AppRoutes.routes, // Definindo as rotas
+      initialRoute: AppRoutes.forms,
+      routes: AppRoutes.routes,
     );
   }
 }
